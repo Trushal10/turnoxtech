@@ -1,0 +1,38 @@
+import { Metadata } from "next";
+import Banner from "./components/home/hero";
+import Companies from "./components/home/companies";
+import Work from "./components/home/work";
+import StatsSection from "./components/home/table";
+import Features from "./components/home/features";
+import Services from "./components/home/services";
+import Trade from "./components/home/trade";
+import Faq from "./components/home/faq";
+import ContactForm from "./components/ContactForm";
+import Simple from "./components/home/simple";
+
+export const metadata: Metadata = {
+  title: "Trunox Tech - Innovative Web, App & Software Solutions",
+  description:
+    "Trunox Tech is a digital innovation company specializing in custom websites, mobile apps, and software solutions. We help startups and enterprises scale with secure, high-performance, and future-ready digital products.",
+  icons: {
+    icon: "/images/logo/favicon.ico",
+  },
+};
+
+
+export default function Home() {
+  return (
+    <main>
+      <Banner/>
+      <Companies />
+      <Work />
+      {/* <Features /> */}
+      <Services />
+      <Simple />
+      <Trade />
+      {/* <StatsSection /> */}
+      <Faq />
+      {/* <ContactForm /> */}
+    </main>
+  );
+}
