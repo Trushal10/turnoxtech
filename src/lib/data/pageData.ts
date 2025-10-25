@@ -14,44 +14,43 @@ export const Headerdata: HeaderItem[] = [
   { label: "Contact Us", href: "/contact" },
 ];
 
-const basePath = process.env.NODE_ENV === "production" ? "/crypto-nextjs" : "";
 
 export const Companiesdata: { imgSrc: string }[] = [
   {
-    imgSrc: `${basePath}/images/companies/birdseye.svg`,
+    imgSrc: "images/companies/birdseye.svg",
   },
   {
-    imgSrc: `${basePath}/images/companies/break.svg`,
+    imgSrc: "images/companies/break.svg",
   },
   {
-    imgSrc: `${basePath}/images/companies/keddar.svg`,
+    imgSrc: "images/companies/keddar.svg",
   },
   {
-    imgSrc: `${basePath}/images/companies/shield.svg`,
+    imgSrc: "images/companies/shield.svg",
   },
   {
-    imgSrc: `${basePath}/images/companies/tandov.svg`,
+    imgSrc: "images/companies/tandov.svg",
   },
   {
-    imgSrc: `${basePath}/images/companies/tree.svg`,
+    imgSrc: "images/companies/tree.svg",
   },
 ];
 
 export const workdata: WorkType[] = [
   {
-    imgSrc: `${basePath}/images/work/icon-one.svg`,
+    imgSrc: "images/work/icon-one.svg",
     heading: "Share Your Requirements",
     subheading:
       "Tell us about your project needs and goals. Provide details about your business, target audience, and desired features to help our team understand your vision.",
   },
   {
-    imgSrc: `${basePath}/images/work/icon-two.svg`,
+    imgSrc: "images/work/icon-two.svg",
     heading: "Collaborate with Experts",
     subheading:
       "Work closely with our experienced developers, designers, and strategists to plan and execute your project efficiently. We ensure clear communication every step of the way.",
   },
   {
-    imgSrc: `${basePath}/images/work/icon-three.svg`,
+    imgSrc: "images/work/icon-three.svg",
     heading: "Launch & Grow",
     subheading:
       "Once development is complete, launch your website, app, or software with confidence. We provide support and updates to help your digital solutions thrive and scale.",
@@ -60,19 +59,19 @@ export const workdata: WorkType[] = [
 
 export const Featuresdata: FeatureType[] = [
   {
-    imgSrc: `${basePath}/images/features/featureOne.svg`,
+    imgSrc: "images/features/featureOne.svg",
     heading: "Custom Software Solutions",
     subheading:
       "Get tailor-made web, mobile, and desktop applications designed to meet your business needs and drive growth.",
   },
   {
-    imgSrc: `${basePath}/images/features/featureTwo.svg`,
+    imgSrc: "images/features/featureTwo.svg",
     heading: "Expert Team Support",
     subheading:
       "Work with our experienced developers, designers, and strategists who provide guidance and support throughout your project.",
   },
   {
-    imgSrc: `${basePath}/images/features/featureThree.svg`,
+    imgSrc: "images/features/featureThree.svg",
     heading: "Scalable & Reliable",
     subheading:
       "Our solutions are built for performance and scalability, ensuring your digital products grow seamlessly with your business.",
@@ -81,43 +80,43 @@ export const Featuresdata: FeatureType[] = [
 
 export const ServicesData: ServiceType[] = [
   {
-    imgSrc: `${basePath}/images/features/featureOne.svg`,
+    imgSrc: "images/features/featureOne.svg",
     heading: "Laravel Development",
     subheading:
       "Build secure, fast, and scalable web applications using Laravel with clean architecture and powerful backend logic.",
   },
   {
-    imgSrc: `${basePath}/images/services/node.svg`,
+    imgSrc: "images/services/node.svg",
     heading: "Node.js Development",
     subheading:
       "Develop high-performance APIs and real-time applications using Node.js for modern, scalable backend solutions.",
   },
   {
-    imgSrc: `${basePath}/images/services/ecommerce.svg`,
+    imgSrc: "images/services/ecommerce.svg",
     heading: "E-commerce Development",
     subheading:
       "Create feature-rich online stores with seamless checkout, product management, and user-friendly designs.",
   },
   {
-    imgSrc: `${basePath}/images/services/customweb.svg`,
+    imgSrc: "images/services/customweb.svg",
     heading: "Custom Web Application Development",
     subheading:
       "We craft fully customized web applications tailored to your business needs, ensuring flexibility and performance.",
   },
   {
-    imgSrc: `${basePath}/images/services/erp.svg`,
+    imgSrc: "images/services/erp.svg",
     heading: "ERP Development",
     subheading:
       "Design and develop ERP systems that streamline your operations, enhance productivity, and centralize your business data.",
   },
   {
-    imgSrc: `${basePath}/images/services/maintenance.svg`,
+    imgSrc: "images/services/maintenance.svg",
     heading: "Website Maintenance",
     subheading:
       "Keep your website secure, fast, and up to date with our ongoing maintenance and support services.",
   },
   {
-    imgSrc: `${basePath}/images/services/website.svg`,
+    imgSrc: "images/services/website.svg",
     heading: "Website Creation",
     subheading:
       "Launch your online presence with a stunning, responsive, and SEO-friendly website tailored to your brand.",
@@ -159,19 +158,19 @@ export const Faqdata: FaqType[] = [
 
 export const Sociallinkdata: SocialType[] = [
   {
-    imgsrc: `${basePath}/images/footer/insta.svg`,
+    imgsrc: "images/footer/insta.svg",
     href: "https://instagram.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/dribble.svg`,
+    imgsrc: "images/footer/dribble.svg",
     href: "https://dribble.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/twitter.svg`,
+    imgsrc: "images/footer/twitter.svg",
     href: "https://twitter.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/youtube.svg`,
+    imgsrc: "images/footer/youtube.svg",
     href: "https://youtube.com/",
   },
 ];
