@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Logo: React.FC = () => {
   return (
-    <Link href="/" style={{ width: "290px"}}>
+    <Link href="/" className="w-[290px] md:w-[250px]">
       <Image
         src={getImagePath("/images/logo/logo.png")}
         alt="logo"

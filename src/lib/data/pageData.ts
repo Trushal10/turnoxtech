@@ -86,13 +86,13 @@ export const ServicesData: ServiceType[] = [
       "Build secure, fast, and scalable web applications using Laravel with clean architecture and powerful backend logic.",
   },
   {
-    imgSrc: "/images/services/node.svg",
+    imgSrc: "/images/services/nodejs.svg",
     heading: "Node.js Development",
     subheading:
       "Develop high-performance APIs and real-time applications using Node.js for modern, scalable backend solutions.",
   },
   {
-    imgSrc: "/images/services/ecommerce.svg",
+    imgSrc: "https://qlinkon.com/wp-content/uploads/2025/03/3-01.png",
     heading: "E-commerce Development",
     subheading:
       "Create feature-rich online stores with seamless checkout, product management, and user-friendly designs.",
