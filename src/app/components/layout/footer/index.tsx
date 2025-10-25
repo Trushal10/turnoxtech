@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <p className="text-white text-xl font-medium mb-9">Contact Us</p>
             <Link
-              href={"tel:(406) 555-012"}
+              href={"tel:9979036226"}
               className="text-white/60 hover:text-primary text-sm font-normal mb-6 flex gap-2 w-fit"
             >
               <Image
@@ -67,7 +67,7 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-              (406) 555-012
+              +91 9979036226
             </Link>
             <Link
               href={"mailto:tim.jennings@example.com"}
@@ -79,7 +79,7 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-              tim.jennings@example.com
+              trunoxtech@gmail.com
             </Link>
             <div className="text-white/60 text-sm font-normal mb-6 flex gap-2">
               <Image
@@ -88,22 +88,14 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-              Elgin St. Celina, Delaware 10299
+              Trunox Tech - Bopal (CT), Ahmedabad, Gujarat 380058
             </div>
           </div>
         </div>
       </div>
       <div className="py-8 px-4 border-t border-t-lightblue">
         <p className="text-center text-white">
-          @2025 - All Rights Reserved by{" "}
-          <Link
-            href="https://getnextjstemplates.com/"
-            target="_blank"
-            className="hover:text-primary"
-          >
-            {" "}
-            Trunoxtech
-          </Link>
+          © Copyright 2025 TrunoxTech. All Rights Reserved.
         </p>
       </div>
     </footer>

@@ -4,12 +4,12 @@ import { FooterType } from "@/app/types/footerlink";
 import { HeaderItem } from "@/app/types/menu";
 import { SocialType } from "@/app/types/sociallink";
 import { WorkType } from "@/app/types/work";
-import { ServiceType } from "@/app/types/services"
+import { ServiceType } from "@/app/types/services";
 
 export const Headerdata: HeaderItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "services", href: "/#services-section" },
+  { label: "Services", href: "/services" },
   { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -80,43 +80,43 @@ export const Featuresdata: FeatureType[] = [
 
 export const ServicesData: ServiceType[] = [
   {
-    imgSrc: "images/features/featureOne.svg",
+    imgSrc: "/images/services/laravel.svg",
     heading: "Laravel Development",
     subheading:
       "Build secure, fast, and scalable web applications using Laravel with clean architecture and powerful backend logic.",
   },
   {
-    imgSrc: "images/services/node.svg",
+    imgSrc: "/images/services/node.svg",
     heading: "Node.js Development",
     subheading:
       "Develop high-performance APIs and real-time applications using Node.js for modern, scalable backend solutions.",
   },
   {
-    imgSrc: "images/services/ecommerce.svg",
+    imgSrc: "/images/services/ecommerce.svg",
     heading: "E-commerce Development",
     subheading:
       "Create feature-rich online stores with seamless checkout, product management, and user-friendly designs.",
   },
   {
-    imgSrc: "images/services/customweb.svg",
+    imgSrc: "/images/services/customweb.svg",
     heading: "Custom Web Application Development",
     subheading:
       "We craft fully customized web applications tailored to your business needs, ensuring flexibility and performance.",
   },
   {
-    imgSrc: "images/services/erp.svg",
+    imgSrc: "/images/services/erp.svg",
     heading: "ERP Development",
     subheading:
       "Design and develop ERP systems that streamline your operations, enhance productivity, and centralize your business data.",
   },
   {
-    imgSrc: "images/services/maintenance.svg",
+    imgSrc: "/images/services/maintenance.svg",
     heading: "Website Maintenance",
     subheading:
       "Keep your website secure, fast, and up to date with our ongoing maintenance and support services.",
   },
   {
-    imgSrc: "images/services/website.svg",
+    imgSrc: "/images/services/website.svg",
     heading: "Website Creation",
     subheading:
       "Launch your online presence with a stunning, responsive, and SEO-friendly website tailored to your brand.",
@@ -158,19 +158,19 @@ export const Faqdata: FaqType[] = [
 
 export const Sociallinkdata: SocialType[] = [
   {
-    imgsrc: "images/footer/insta.svg",
+    imgsrc: "/images/footer/insta.svg",
     href: "https://instagram.com/",
   },
   {
-    imgsrc: "images/footer/dribble.svg",
+    imgsrc: "/images/footer/dribble.svg",
     href: "https://dribble.com/",
   },
   {
-    imgsrc: "images/footer/twitter.svg",
+    imgsrc: "/images/footer/twitter.svg",
     href: "https://twitter.com/",
   },
   {
-    imgsrc: "images/footer/youtube.svg",
+    imgsrc: "/images/footer/youtube.svg",
     href: "https://youtube.com/",
   },
 ];
@@ -178,7 +178,7 @@ export const Sociallinkdata: SocialType[] = [
 export const Footerlinkdata: FooterType[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "services", href: "/#services-section" },
+  { label: "Services", href: "/services" },
   { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/contact" },
 ];

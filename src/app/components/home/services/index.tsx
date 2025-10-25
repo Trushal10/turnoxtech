@@ -1,8 +1,9 @@
 "use client";
 import {ServicesData } from "@/lib/data/pageData";
 import Image from "next/image";
+import Link from "next/link";
 
-const Features = () => {
+const Services = () => {
   return (
     <section id="services-section" className="scroll-mt-20">
       <div className="container relative">
@@ -24,12 +25,12 @@ const Features = () => {
             </p>
           </div>
           {/* Column-2 */}
-          <div>
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-x-10 gap-y-4 -right-1/4">
-              {ServicesData?.map((items, i) => (
+          <div className="relative">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6">
+              {ServicesData?.slice(0, 3).map((items, i) => (
                 <div
-                  className="bg-darkmode p-8 rounded-lg flex flex-col gap-3"
                   key={i}
+                  className="bg-darkmode p-8 rounded-2xl flex flex-col gap-4 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
                 >
                   <div className="rounded-full bg-linear-to-r from-primary to-secondary w-fit p-4 flex items-center justify-center">
                     <Image
@@ -37,23 +38,33 @@ const Features = () => {
                       alt={items.imgSrc}
                       width={60}
                       height={60}
-                      className="w-auto"
                     />
                   </div>
-                  <h5 className="text-white/80 text-lg font-medium capitalize">
+                  <h5 className="text-white/90 text-lg font-semibold capitalize">
                     {items.heading}
                   </h5>
-                  <p className="text-white/40 text-sm font-normal">
+                  <p className="text-white/50 text-sm leading-relaxed">
                     {items.subheading}
                   </p>
                 </div>
               ))}
             </div>
+
+            {/* View All Services Link */}
+            <div className="flex justify-end mt-10">
+              <Link
+                href="/services"
+                className="font-semibold text-white py-3 px-5 lg:px-12 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl mr-6 cursor-pointer"
+              >
+                View All Services
+              </Link>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default Features;
+export default Services;

@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | Trunox Tech",
+  icons: {
+    icon: "/images/logo/favicon.ico",
+  },
   description:
     "At Trunox Tech, we turn creative ideas into digital reality. We specialize in web development, software solutions, and app design that help startups and businesses grow through innovation and technology.",
   keywords: [

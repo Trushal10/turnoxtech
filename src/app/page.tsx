@@ -55,13 +55,10 @@ export default function Home() {
       <Banner/>
       <Companies />
       <Work />
-      {/* <Features /> */}
       <Services />
       <Simple />
       <Trade />
-      {/* <StatsSection /> */}
       <Faq />
-      {/* <ContactForm /> */}
     </main>
   );
 }

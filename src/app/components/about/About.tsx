@@ -10,7 +10,7 @@ export const About = () => {
           <div className="col-span-12 lg:col-span-6 flex justify-center lg:justify-start mb-8 lg:mb-0">
             {/* Uncomment and use your images when available */}
             <Image
-              src={"https://superassignmenthelp.co/img/s8_img1.png"}
+              src={"/images/about-img.webp"}
               alt="About Trunox"
               width={500}
               height={400}

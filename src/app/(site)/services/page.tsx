@@ -1,9 +1,9 @@
 
-import Contact from "@/app/components/contact/Contact";
+import Services from "@/app/components/services";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Trunox Tech",
+  title: "Services | Trunox Tech",
   icons: {
     icon: "/images/logo/favicon.ico",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "digital solutions",
   ],
   openGraph: {
-    title: "Contact Us | Trunox Tech",
+    title: "Services | Trunox Tech",
     description:
       "Reach out to Trunox Tech for web, software, and app solutions that drive your business forward.",
     url: "https://trunoxtech.com/contact",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-          <Contact />
+          <Services />
         </>
     );
 };

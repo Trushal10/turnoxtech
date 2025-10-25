@@ -9,6 +9,9 @@ const Work = () => {
       <div className="bg-banner-image absolute w-full h-full right-auto blur-390" />
       <div className="container">
         <div className="text-center mb-14">
+           <p className="text-primary text-base sm:text-lg font-semibold mb-4 text-center">
+              WORK
+            </p>
           <h2 className="mb-3 capitalize">How It Works</h2>
           <p className="text-lightpurple max-w-5xl mx-auto md:text-lg font-normal md:leading-8 capitalize">
             Getting started with Trunox Tech is simple. Share your project requirements, 
