@@ -55,19 +55,19 @@ const Services = () => {
         {/* View All Services Button */}
         <div className="flex justify-end mt-14">
           <Link href="/services"
-                    className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-sm font-semibold hover:from-secondary hover:to-primary transition-all duration-500"
-                >
-                    <span>View All Services</span>
-                    <svg
-                    className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-            </Link>
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-sm font-semibold hover:from-secondary hover:to-primary transition-all duration-500"
+          >
+              <span>View All Services</span>
+              <svg
+              className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+          </Link>
         </div>
       </div>
     </section>
