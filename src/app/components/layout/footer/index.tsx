@@ -8,6 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-body-bg relative pt-10">
+      <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1/2 border-t border-yellow-400 border-[2px]"></div>
       <div className="bg-linear-to-r from-primary to-secondary hidden lg:block absolute w-full h-full top-0 -left-1/2 blur-390"></div>
       <div className="container relative z-10 pb-16">
         <div className="grid grid-cols-1 gap-y-10 md:gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">

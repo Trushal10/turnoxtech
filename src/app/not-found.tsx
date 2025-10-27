@@ -1,6 +1,5 @@
 
 import { Metadata } from "next";
-import HeroSub from "./components/shared/hero-sub";
 import NotFound from "./components/not-found";
 
 export const metadata: Metadata = {
@@ -10,9 +9,6 @@ export const metadata: Metadata = {
 const ErrorPage = () => {
   return (
     <>
-      <HeroSub
-        title="404"
-      />
       <NotFound />
     </>
   );

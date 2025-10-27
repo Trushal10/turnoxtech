@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Banner from "./components/home/hero";
-import Companies from "./components/home/companies";
 import Work from "./components/home/work";
 import Services from "./components/home/services";
-import Trade from "./components/home/trade";
-import Faq from "./components/home/faq";
 import Simple from "./components/home/simple";
+import { About } from "./components/home/about";
+import WhyChooseUs from "./components/home/whychooseus";
+import Testimonials from "./components/home/testimonials";
 
 export const metadata: Metadata = {
   title: "Trunox Tech - Innovative Web, App & Software Solutions",
@@ -53,12 +53,12 @@ export default function Home() {
   return (
     <main>
       <Banner/>
-      <Companies />
-      <Work />
       <Services />
+      <About />
+      <Work />
       <Simple />
-      <Trade />
-      <Faq />
+      < WhyChooseUs />
+      < Testimonials />
     </main>
   );
 }

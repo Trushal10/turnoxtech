@@ -1,5 +1,3 @@
-import { FaqType } from "@/app/types/faq";
-import { FeatureType } from "@/app/types/features";
 import { FooterType } from "@/app/types/footerlink";
 import { HeaderItem } from "@/app/types/menu";
 import { SocialType } from "@/app/types/sociallink";
@@ -10,7 +8,6 @@ export const Headerdata: HeaderItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -38,121 +35,155 @@ export const Companiesdata: { imgSrc: string }[] = [
 
 export const workdata: WorkType[] = [
   {
-    imgSrc: "images/work/icon-one.svg",
+    icon: "mdi:clipboard-text-outline",
     heading: "Share Your Requirements",
     subheading:
       "Tell us about your project needs and goals. Provide details about your business, target audience, and desired features to help our team understand your vision.",
   },
   {
-    imgSrc: "images/work/icon-two.svg",
+    icon: "mdi:account-group-outline",
     heading: "Collaborate with Experts",
     subheading:
       "Work closely with our experienced developers, designers, and strategists to plan and execute your project efficiently. We ensure clear communication every step of the way.",
   },
   {
-    imgSrc: "images/work/icon-three.svg",
+    icon: "mdi:rocket-launch-outline",
     heading: "Launch & Grow",
     subheading:
       "Once development is complete, launch your website, app, or software with confidence. We provide support and updates to help your digital solutions thrive and scale.",
   },
 ];
 
-export const Featuresdata: FeatureType[] = [
+export const portfolioData = [
   {
-    imgSrc: "images/features/featureOne.svg",
-    heading: "Custom Software Solutions",
-    subheading:
-      "Get tailor-made web, mobile, and desktop applications designed to meet your business needs and drive growth.",
+    title: "E-commerce Website",
+    image: "https://qlinkon.com/wp-content/uploads/2025/03/4-7-410x283.jpg",
+    link: "#",
   },
   {
-    imgSrc: "images/features/featureTwo.svg",
-    heading: "Expert Team Support",
-    subheading:
-      "Work with our experienced developers, designers, and strategists who provide guidance and support throughout your project.",
+    title: "Corporate Website",
+    image: "https://qlinkon.com/wp-content/uploads/2025/03/4-7-410x283.jpg",
+    link: "#",
   },
   {
-    imgSrc: "images/features/featureThree.svg",
-    heading: "Scalable & Reliable",
-    subheading:
-      "Our solutions are built for performance and scalability, ensuring your digital products grow seamlessly with your business.",
+    title: "Mobile App Design",
+    image: "https://qlinkon.com/wp-content/uploads/2025/03/4-7-410x283.jpg",
+    link: "#",
+  },
+  {
+    title: "Custom Web App",
+    image: "https://qlinkon.com/wp-content/uploads/2025/03/4-7-410x283.jpg",
+    link: "#",
   },
 ];
 
 export const ServicesData: ServiceType[] = [
   {
-    imgSrc: "/images/services/laravel.svg",
-    heading: "Laravel Development",
+    imgSrc: "/images/services/websitedevelopment-icon.webp",
+    heading: "Website Development",
     subheading:
-      "Build secure, fast, and scalable web applications using Laravel with clean architecture and powerful backend logic.",
+      "Build responsive, modern, and high-performance websites tailored to your brand and business goals.",
   },
   {
-    imgSrc: "/images/services/nodejs.svg",
-    heading: "Node.js Development",
+    imgSrc: "/images/services/mobileappdevelopment-icon.webp",
+    heading: "Mobile Application Development",
     subheading:
-      "Develop high-performance APIs and real-time applications using Node.js for modern, scalable backend solutions.",
+      "Create user-friendly Android and iOS apps that deliver seamless performance and great user experience.",
   },
   {
-    imgSrc: "https://qlinkon.com/wp-content/uploads/2025/03/3-01.png",
+    imgSrc: "/images/services/ecommercedevelopment-icon.webp",
     heading: "E-commerce Development",
     subheading:
-      "Create feature-rich online stores with seamless checkout, product management, and user-friendly designs.",
+      "Launch powerful online stores with secure payment gateways, product management, and easy scalability.",
   },
   {
-    imgSrc: "/images/services/customweb.svg",
-    heading: "Custom Web Application Development",
+    imgSrc: "/images/services/csw-icon.webp",
+    heading: "Custom Software Development",
     subheading:
-      "We craft fully customized web applications tailored to your business needs, ensuring flexibility and performance.",
+      "Develop tailored software solutions to automate workflows and boost business efficiency.",
   },
   {
-    imgSrc: "/images/services/erp.svg",
+    imgSrc: "https://cdn3d.iconscout.com/3d/premium/thumb/finance-analysis-3d-icon-png-download-7656002.png",
     heading: "ERP Development",
     subheading:
-      "Design and develop ERP systems that streamline your operations, enhance productivity, and centralize your business data.",
+      "Design and implement ERP systems that centralize business operations and improve productivity.",
   },
   {
-    imgSrc: "/images/services/maintenance.svg",
-    heading: "Website Maintenance",
+    imgSrc: "/images/services/apiintegrations-icon.webp",
+    heading: "API Integrations",
     subheading:
-      "Keep your website secure, fast, and up to date with our ongoing maintenance and support services.",
+      "Connect your systems and apps smoothly with secure, efficient, and scalable API integrations.",
   },
   {
-    imgSrc: "/images/services/website.svg",
-    heading: "Website Creation",
+    imgSrc: "/images/services/socialmediamarketing-icon.webp",
+    heading: "Social Media Marketing",
     subheading:
-      "Launch your online presence with a stunning, responsive, and SEO-friendly website tailored to your brand.",
+      "Grow your online presence with creative campaigns that connect your brand to the right audience.",
+  },
+  {
+    imgSrc: "/images/services/emailmarketing-icon.webp",
+    heading: "Email Marketing",
+    subheading:
+      "Engage customers and drive conversions with strategic, result-focused email campaigns.",
   },
 ];
 
-export const Faqdata: FaqType[] = [
+export const testimonials = [
   {
-    heading: "1. What services does Trunox provide?",
-    subheading:
-      "We offer end-to-end IT solutions including Laravel and Node.js development, custom web applications, E-commerce platforms, ERP systems, and website maintenance — all designed to help your business grow digitally.",
+    name: "Rahul Mehta",
+    company: "BrightWave Technologies",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png",
+    message:
+      "Working with Trunox transformed our digital presence. Their attention to detail and timely delivery made our website a complete success.",
   },
   {
-    heading: "2. Do you provide custom web application development?",
-    subheading:
-      "Yes, we specialize in creating fully customized web applications that align with your business goals. From concept to deployment, we build scalable and secure apps tailored to your exact requirements.",
+    name: "Sneha Patel",
+    company: "CraftNest Studio",
+    img: "https://images.icon-icons.com/2643/PNG/512/female_woman_user_people_avatar_white_tone_icon_159354.png",
+    message:
+      "The Trunox team was incredibly supportive and professional. They delivered beyond expectations and helped our brand stand out online.",
   },
   {
-    heading: "3. Can you maintain and update our existing website?",
-    subheading:
-      "Absolutely! We provide ongoing website maintenance, updates, and performance optimization to keep your website secure, fast, and user-friendly at all times.",
+    name: "Vikram Singh",
+    company: "NextEdge Solutions",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png",
+    message:
+      "From design to deployment, Trunox handled everything smoothly. Their expertise in modern technologies made our project a breeze.",
   },
   {
-    heading: "4. Do you develop E-commerce websites?",
-    subheading:
-      "Yes, our team builds modern and feature-rich E-commerce websites with secure payment gateways, inventory management, and a smooth user experience that drives sales.",
+    name: "Anjali Shah",
+    company: "Nova Retail",
+    img: "https://images.icon-icons.com/2643/PNG/512/female_woman_user_people_avatar_white_tone_icon_159354.png",
+    message:
+      "Trunox Tech brought our vision to life. Their team is highly responsive and focused on quality from start to finish.",
   },
   {
-    heading: "5. How long does it take to build a website or application?",
-    subheading:
-      "The timeline depends on project complexity and features. A basic website can take 1–3 weeks, while large-scale web or ERP applications may take several months. We provide clear timelines after understanding your project scope.",
+    name: "Rahul Mehta",
+    company: "BrightWave Technologies",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png",
+    message:
+      "Working with Trunox transformed our digital presence. Their attention to detail and timely delivery made our website a complete success.",
   },
   {
-    heading: "6. Do you offer ongoing support after project delivery?",
-    subheading:
-      "Yes, Trunox provides post-launch support, maintenance, and updates to ensure your website or application runs smoothly and stays up-to-date with the latest technologies.",
+    name: "Sneha Patel",
+    company: "CraftNest Studio",
+    img: "https://images.icon-icons.com/2643/PNG/512/female_woman_user_people_avatar_white_tone_icon_159354.png",
+    message:
+      "The Trunox team was incredibly supportive and professional. They delivered beyond expectations and helped our brand stand out online.",
+  },
+  {
+    name: "Vikram Singh",
+    company: "NextEdge Solutions",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png",
+    message:
+      "From design to deployment, Trunox handled everything smoothly. Their expertise in modern technologies made our project a breeze.",
+  },
+  {
+    name: "Anjali Shah",
+    company: "Nova Retail",
+    img: "https://images.icon-icons.com/2643/PNG/512/female_woman_user_people_avatar_white_tone_icon_159354.png",
+    message:
+      "Trunox Tech brought our vision to life. Their team is highly responsive and focused on quality from start to finish.",
   },
 ];
 
@@ -179,6 +210,5 @@ export const Footerlinkdata: FooterType[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/contact" },
 ];

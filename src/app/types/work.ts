@@ -1,5 +1,5 @@
 export type WorkType = {
-  imgSrc: string
+  icon: string
   heading: string
   subheading: string
 }

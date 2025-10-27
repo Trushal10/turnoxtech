@@ -70,9 +70,16 @@ const Contact = () => {
       })
   }
   return (
-    <section id='contact' className='scroll-mt-14 pt-48'>
+    <section id='contact' className="relative scroll-mt-14 bg-[#05071b] text-white overflow-hidden py-24">
+      <h1 className="absolute inset-0 flex justify-center items-start text-[100px] md:text-[160px] lg:text-[240px] font-extrabold uppercase text-white opacity-[0.03] tracking-[0.2em] select-none z-0 pt-32">
+        CONTACT US
+      </h1>
+      {/* Golden border line top */}
+      <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1/2 border-t border-yellow-400 opacity-60"></div>
+      <div className="absolute top-0 right-1/4 translate-x-1/2 w-1/2 border-t border-yellow-400 opacity-60"></div>
+
       <div className='container'>
-        <div className='relative'>
+        <div className='relative pt-36'>
           <h2 className='mb-9  capitalize'>Get in Touch</h2>
           <div className='relative border border-lightblue/35 px-6 py-2 rounded-2xl'>
             <form

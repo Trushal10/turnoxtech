@@ -1,7 +1,6 @@
 "use client";
 import { Headerdata } from "@/lib/data/pageData";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Logo from "./logo";
 import HeaderLink from "./navigation/HeaderLink";
@@ -10,16 +9,14 @@ import MobileHeaderLink from "./navigation/MobileHeaderLink";
 const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
-  const [isSignInOpen, setIsSignInOpen] = useState(false);
-  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
-
-  const navbarRef = useRef<HTMLDivElement>(null);
-  const signInRef = useRef<HTMLDivElement>(null);
-  const signUpRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
-    setSticky(window.scrollY >= 10);
+    if (window.scrollY > 10) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -51,10 +48,10 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full transition-all duration-300 ${
+      className={`fixed top-0 z-[9998] w-full transition-all duration-300 ${
         sticky
-          ? " shadow-lg bg-body-bg bg-banner-image py-2"
-          : "shadow-none py-6"
+          ? "shadow-lg bg-[rgba(5,7,27,0.95)] backdrop-blur-md py-2"
+          : "shadow-none bg-transparent py-6"
       }`}
     >
       <div>

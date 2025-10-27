@@ -20,7 +20,7 @@
 
   --blur-390: 390px;
 
-  --background-image-banner-image: linear-gradient(
+  /* --background-image-banner-image: linear-gradient(
     90deg,
     #bd24df80,
     #2d6ade80 97.15%
@@ -31,7 +31,7 @@
     rgba(45, 106, 222, 0.1) 97.15%
   );
   --background-image-arrow-bg: url('/images/simple/arrow-bg.png');
-  --background-image-newsletter: url('/images/newsletter/hands.svg');
+  --background-image-newsletter: url('/images/newsletter/hands.svg'); */
 }
 
 /*
@@ -51,16 +51,41 @@
     border-color: var(--color-gray-200, currentcolor);
   }
 
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
+  }
+
+  .bg-body-bg {
+    background-color: var(--color-body-bg) !important;
+  }
   section {
-    @apply py-14 bg-body-bg;
+    @apply py-14;
   }
 
   h1 {
-    @apply text-white font-bold lg:text-6xl sm:text-6xl text-5xl;
+    @apply text-white lg:text-6xl sm:text-6xl text-5xl;
   }
 
   h2 {
-    @apply text-lightsky sm:text-5xl text-4xl font-bold;
+    @apply text-lightsky sm:text-5xl text-4xl;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.05); }
+  }
+  .animate-pulse {
+    animation: pulse-glow 8s ease-in-out infinite;
   }
 }
 
