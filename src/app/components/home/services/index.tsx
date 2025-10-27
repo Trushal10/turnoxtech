@@ -19,11 +19,11 @@ const Services = () => {
         {/* Heading Section */}
         <div className="text-center mb-14">
           <p className="text-yellow-400 font-semibold uppercase tracking-widest mb-3">
-              Better Future
+            Better Future
           </p>
 
           <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
-              Explore Our<span className="text-primary"> Services</span>
+            Explore Our<span className="text-primary"> Services</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-4xl mx-auto">
             From <span className="text-white font-medium">Website & App Development</span> to

@@ -33,7 +33,7 @@ const Simple = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center px-4">
-        <p className="text-primary font-semibold uppercase tracking-widest mb-3">
+        <p className="text-yellow-400 font-semibold uppercase tracking-widest mb-3">
           Our Achievements
         </p>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
