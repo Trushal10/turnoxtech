@@ -54,7 +54,7 @@ const Services = () => {
 
         {/* View All Services Button */}
         <div className="flex justify-end mt-14">
-          <Link href="/contact"
+          <Link href="/services"
                     className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-sm font-semibold hover:from-secondary hover:to-primary transition-all duration-500"
                 >
                     <span>View All Services</span>
