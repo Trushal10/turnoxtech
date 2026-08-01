@@ -20,7 +20,7 @@ const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
 });
 
-const SITE_URL = "https://trunoxtech.com";
+const SITE_URL = "https://trunoxtech.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
