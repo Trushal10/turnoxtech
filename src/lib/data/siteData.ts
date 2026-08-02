@@ -71,14 +71,7 @@ export const socialLinks: { label: string; href: string; icon: IconName }[] = [
    Trusted by — light wordmarks rendered as text, no stock logos
    ========================================================================== */
 
-export const trustedBy = [
-  "Northwind",
-  "Helixa",
-  "Cobalt Labs",
-  "Meridian",
-  "Kavya Health",
-  "Orbit Retail",
-];
+export const trustedBy = ["Anirah Advisory", "Earthma Mould Tech"];
 
 /* ==========================================================================
    Services
@@ -315,7 +308,13 @@ export type CaseStudy = {
   industry: string;
   summary: string;
   tech: string[];
+  /**
+   * Scope facts, each one verifiable on the live site. Deliberately not
+   * business-outcome metrics — swap these for real figures (conversion,
+   * traffic, revenue) once the client confirms numbers we can stand behind.
+   */
   results: { value: string; label: string }[];
+  /** Live production URL. External, so cards open it in a new tab. */
   href: string;
   accent: "blue" | "violet" | "teal" | "amber";
   thumb: "dashboard" | "chat" | "mobile" | "commerce";
@@ -323,100 +322,36 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "clinical-intake-ai",
-    title: "AI Clinical Intake Platform",
-    industry: "Healthcare",
+    slug: "anirah-advisory",
+    title: "Anirah Advisory",
+    industry: "Business Advisory",
     summary:
-      "An LLM intake assistant that turns free-text patient notes into structured records and routes them to the right specialist.",
-    tech: ["Next.js", "Python", "OpenAI", "PostgreSQL", "AWS"],
+      "A startup and MSME advisory platform covering company registration, Startup India recognition, tax exemption, government funding schemes and compliance — with every service, scheme, blog post and testimonial editable from an admin panel.",
+    tech: ["Laravel", "Inertia.js", "Vue", "Vite", "MySQL"],
     results: [
-      { value: "72%", label: "less admin time" },
-      { value: "3.4×", label: "faster triage" },
-      { value: "99.9%", label: "uptime" },
+      { value: "7", label: "service verticals" },
+      { value: "4", label: "funding schemes" },
+      { value: "CMS", label: "admin-managed" },
     ],
-    href: "/portfolio",
+    href: "https://anirahadvisory.com/",
     accent: "blue",
-    thumb: "chat",
-  },
-  {
-    slug: "factory-ops-suite",
-    title: "Factory Operations Suite",
-    industry: "Manufacturing",
-    summary:
-      "Real-time production dashboards with predictive maintenance alerts across eleven plant floors.",
-    tech: ["Vue", "Laravel", "Redis", "Docker", "MySQL"],
-    results: [
-      { value: "38%", label: "less downtime" },
-      { value: "₹2.1Cr", label: "annual savings" },
-      { value: "11", label: "plants live" },
-    ],
-    href: "/portfolio",
-    accent: "violet",
     thumb: "dashboard",
   },
   {
-    slug: "lending-decision-engine",
-    title: "Lending Decision Engine",
-    industry: "Finance",
-    summary:
-      "A rules-plus-ML underwriting engine with a full audit trail, cutting loan decisions from days to minutes.",
-    tech: ["Python", "Next.js", "PostgreSQL", "AWS", "Redis"],
-    results: [
-      { value: "9 min", label: "avg. decision" },
-      { value: "2.8×", label: "throughput" },
-      { value: "100%", label: "auditable" },
-    ],
-    href: "/portfolio",
-    accent: "teal",
-    thumb: "dashboard",
-  },
-  {
-    slug: "fleet-logistics-app",
-    title: "Fleet & Logistics App",
-    industry: "Logistics",
-    summary:
-      "Offline-first driver app with live route optimisation and proof-of-delivery capture for 900+ vehicles.",
-    tech: ["React Native", "Node.js", "PostgreSQL", "Docker"],
-    results: [
-      { value: "24%", label: "lower fuel cost" },
-      { value: "900+", label: "vehicles" },
-      { value: "4.8★", label: "driver rating" },
-    ],
-    href: "/portfolio",
-    accent: "amber",
-    thumb: "mobile",
-  },
-  {
-    slug: "headless-commerce",
-    title: "Headless Commerce Platform",
+    slug: "earthma-mould-tech",
+    title: "Earthma Mould Tech",
     industry: "E-commerce",
     summary:
-      "A composable storefront with AI product search and personalised merchandising across three markets.",
-    tech: ["Next.js", "Node.js", "OpenAI", "Redis", "AWS"],
+      "A direct-to-consumer storefront for DIY painting kits, silicone moulds and candle holders — browsable by age and category, with customer accounts, wishlists, order tracking and Razorpay checkout.",
+    tech: ["Laravel", "Blade", "Bootstrap", "Razorpay", "MySQL"],
     results: [
-      { value: "+41%", label: "conversion" },
-      { value: "0.9s", label: "LCP" },
-      { value: "3", label: "markets" },
+      { value: "4", label: "product categories" },
+      { value: "Razorpay", label: "payments live" },
+      { value: "Wishlist", label: "+ order tracking" },
     ],
-    href: "/portfolio",
-    accent: "blue",
+    href: "http://earthmamouldtech.com/",
+    accent: "amber",
     thumb: "commerce",
-  },
-  {
-    slug: "campus-learning-saas",
-    title: "Campus Learning SaaS",
-    industry: "Education",
-    summary:
-      "Multi-tenant LMS with AI-generated assessments and live cohort analytics for 40 institutions.",
-    tech: ["Laravel", "Vue", "MySQL", "OpenAI", "Docker"],
-    results: [
-      { value: "40", label: "institutions" },
-      { value: "58k", label: "active students" },
-      { value: "6×", label: "content speed" },
-    ],
-    href: "/portfolio",
-    accent: "violet",
-    thumb: "dashboard",
   },
 ];
 

@@ -17,7 +17,7 @@ export default function Home() {
       <Services />
       <WhyUs />
       <Process />
-      <Portfolio limit={3} />
+      <Portfolio />
       <Technologies />
       <Testimonials />
       <Stats />

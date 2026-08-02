@@ -13,12 +13,12 @@ import { caseStudies } from "@/lib/data/siteData";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Case studies from TrunoxTech: AI clinical intake, factory operations dashboards, lending decision engines, logistics apps, headless commerce and multi-tenant SaaS — with the business results each delivered.",
+    "Case studies from TrunoxTech — Anirah Advisory, a startup and MSME advisory platform, and Earthma Mould Tech, a DIY craft e-commerce store. Both built on Laravel and live in production.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
     title: "Portfolio | TrunoxTech",
     description:
-      "Live products we've built across healthcare, manufacturing, finance, logistics, retail and education.",
+      "Live Laravel products we've built across business advisory and e-commerce.",
     url: "/portfolio",
   },
 };
@@ -32,9 +32,9 @@ export default function PortfolioPage() {
         breadcrumb="Portfolio"
         eyebrow="Selected work"
         eyebrowIcon="rocket"
-        title="Case studies with"
-        highlight="the numbers left in"
-        description="Six products currently running in production. Each card carries the industry, the stack we used and the outcomes the client measured after launch — not projections."
+        title="Work you can"
+        highlight="click through"
+        description="Products currently running in production for real clients. Each card carries the industry, the stack we shipped on and what the platform does — and links straight to the live site."
       >
         <div className="mt-10 flex flex-wrap gap-2">
           {industries.map((industry) => (
@@ -50,7 +50,7 @@ export default function PortfolioPage() {
 
       <section className="pb-8 md:pb-12">
         <div className="container">
-          <RevealGroup className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <RevealGroup className="grid gap-6 md:grid-cols-2">
             {caseStudies.map((study) => (
               <RevealItem key={study.slug} className="h-full">
                 <CaseStudyCard study={study} />

@@ -137,20 +137,19 @@ export default function Hero() {
           className="mt-24 border-t border-hairline pt-10 lg:mt-32"
         >
           <p className="text-center font-display text-[13px] font-semibold uppercase tracking-[0.18em] text-muted-2">
-            Trusted by teams building serious software
+            Trusted by
           </p>
-          <div className="mask-edges mt-8 overflow-hidden">
-            <div className="animate-marquee flex w-max items-center gap-14 hover:[animation-play-state:paused]">
-              {[...trustedBy, ...trustedBy].map((name, i) => (
-                <span
-                  key={`${name}-${i}`}
-                  aria-hidden={i >= trustedBy.length}
-                  className="shrink-0 font-display text-xl font-bold tracking-tight text-muted-2 grayscale transition-colors duration-300 hover:text-ink-soft md:text-2xl"
-                >
-                  {name}
-                </span>
-              ))}
-            </div>
+          {/* Static row, not a marquee — a short client list would loop with
+              visible gaps. Switch back to `animate-marquee` past ~6 names. */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-4">
+            {trustedBy.map((name) => (
+              <span
+                key={name}
+                className="font-display text-xl font-bold tracking-tight text-muted-2 transition-colors duration-300 hover:text-ink-soft md:text-2xl"
+              >
+                {name}
+              </span>
+            ))}
           </div>
         </motion.div>
       </div>

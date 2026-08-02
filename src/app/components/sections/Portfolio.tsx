@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { caseStudies, type CaseStudy } from "@/lib/data/siteData";
 import CaseThumb from "../graphics/CaseThumb";
 import Icon from "../ui/Icon";
@@ -35,7 +33,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         {/* Hover overlay with the live-demo affordance */}
         <div className="absolute inset-0 flex items-end justify-end bg-linear-to-t from-ink/70 via-ink/10 to-transparent p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
           <span className="inline-flex items-center gap-2 rounded-pill bg-white px-4 py-2 font-display text-[13px] font-semibold text-ink shadow-lift">
-            Live demo
+            Visit live site
             <Icon name="arrowUpRight" size={15} />
           </span>
         </div>
@@ -78,19 +76,21 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
           ))}
         </dl>
 
-        <Link
+        <a
           href={study.href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-6 inline-flex items-center gap-2 font-display text-sm font-semibold text-brand transition-colors hover:text-accent"
         >
           <span className="absolute inset-0" aria-hidden="true" />
-          View live demo
+          Visit live site
           <Icon
             name="arrowUpRight"
             size={16}
             className="transition-transform duration-400 ease-[cubic-bezier(.16,1,.3,1)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
           />
-          <span className="sr-only">— {study.title}</span>
-        </Link>
+          <span className="sr-only">— {study.title} (opens in a new tab)</span>
+        </a>
       </div>
     </article>
   );
@@ -111,9 +111,9 @@ export default function Portfolio({ limit }: { limit?: number }) {
             align="left"
             eyebrow="Selected work"
             eyebrowIcon="rocket"
-            title="Products in production,"
-            highlight="with numbers attached"
-            description="Every project below is live and measured. These are the outcomes our clients report, not our own estimates."
+            title="Products running"
+            highlight="in production today"
+            description="Every project below is live — click through and use it. Each card lists the industry, the stack we shipped on and what the platform does."
             className="lg:max-w-2xl"
           />
           <ButtonLink
@@ -126,7 +126,7 @@ export default function Portfolio({ limit }: { limit?: number }) {
           </ButtonLink>
         </div>
 
-        <RevealGroup className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <RevealGroup className="mt-16 grid gap-6 md:grid-cols-2">
           {items.map((study) => (
             <RevealItem key={study.slug} className="h-full">
               <CaseStudyCard study={study} />
